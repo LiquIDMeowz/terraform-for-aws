@@ -34,10 +34,6 @@ resource "aws_autoscaling_group" "web" {
   }
 }
 
-# Echo the domain for direct access
-output "elb_dns_name" {
-  value = aws_elb.webelb.dns_name
-}
 
 # Define scale-up policy
 resource "aws_autoscaling_policy" "web_policy_up" {
