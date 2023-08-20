@@ -24,8 +24,3 @@ resource "aws_elb" "webelb" {
     instance_protocol = "http"
   }
 }
-
-# Echo the domain for direct access
-output "elb_dns_name" {
-  value = aws_elb.webelb.dns_name
-}

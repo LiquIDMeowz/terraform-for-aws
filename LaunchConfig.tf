@@ -1,4 +1,4 @@
-# Define launch config for web-server ec's and install required packages @ #7-15
+# Define launch config for web-server ec's and install required packages @ #7 using external .sh script for reusability
 resource "aws_launch_configuration" "web" {
   image_id                    = var.ami_id
   instance_type               = "t2.micro"

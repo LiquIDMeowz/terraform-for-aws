@@ -7,7 +7,7 @@ variable "ami_id" {
 # Declare Username variable for RDS
 variable "rds_user" {
   description = "RDS Username"
-  default     = ""
+  default     = "liquidmeow"
 }
 
 # Declare Password variable for RDS
